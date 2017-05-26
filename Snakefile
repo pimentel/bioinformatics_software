@@ -22,8 +22,8 @@ rule install_kallisto:
         suffix = 'kallisto_mac-v0.43.1.tar.gz' if OS == 'mac' else 'kallisto_linux-v0.43.1.tar.gz'
         shell('curl -L {params.url}/{suffix} --output {suffix}')
         shell('tar -xf {suffix}')
-        shell('mv kallisto/kallisto {BASE}/bin')
-        shell('rm -rf kallisto {suffix}')
+        shell('mv kallisto*/kallisto {BASE}/bin')
+        shell('rm -rf kallisto*')
 
 rule bowtie2:
     output:

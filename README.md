@@ -8,3 +8,5 @@ Current requirements:
 - snakemake
 - curl
 - basic UNIX utilities
+
+Make sure to change `BASE` in Snakefile to the destination you would like to install things into.
