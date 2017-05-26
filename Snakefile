@@ -1,7 +1,4 @@
-BASE = '/Users/hjp'
-
-# other valid OS is linux
-OS = 'mac'
+include: 'config.py'
 
 KALLISTO = BASE + '/bin/kallisto'
 BOWTIE2 = BASE + '/bin/bowtie2'
